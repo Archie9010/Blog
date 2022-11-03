@@ -3,8 +3,8 @@
 
 {% block content %}
 
+{% if user.is.authenticated %}
 <h1>Delete Blog Post</h1>
-
 <br/><br/>
 <h3>Delete: {{ post.title }}</h3>
 
@@ -16,4 +16,11 @@
         <button class="btn btn-dark">Delete</button>
 </div>
  
+{% else %}
+
+<h3>To Edit, Add or Delete Post You Need To Login or Register First!</h3>
+
+{% endif %}
+
+
 {% endblock %}
