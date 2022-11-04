@@ -1,5 +1,5 @@
 from django.urls import path, include
-from django.views import generic 
+from django.views import generic
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 
