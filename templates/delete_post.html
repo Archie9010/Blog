@@ -4,18 +4,21 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-<h1>Delete Blog Post</h1>
-<br/><br/>
-<h3>Delete: {{ post.title }}</h3>
+    {% if user.id == post.author.id %}
+        <h1>Delete Blog Post</h1>
+        <br/><br/>
+        <h3>Delete: {{ post.title }}</h3>
 
-<br/>
-<div class="form-group">
-    <form method="POST">
-        {% csrf_token %} 
-        <strong>Are you sure to delete post ?</strong><br/><br/>
-        <button class="btn btn-dark">Delete</button>
-</div>
- 
+        <br/>
+        <div class="form-group">
+            <form method="POST">
+                {% csrf_token %} 
+                <strong>Are you sure to delete post ?</strong><br/><br/>
+                <button class="btn btn-dark">Delete</button>
+        </div>
+    {% else %}
+         You Cant Edit or Delete Other User's Posts
+    {% endif %}  
 {% else %}
 
 <h3>To Edit, Add or Delete Post You Need To Login or Register First!</h3>

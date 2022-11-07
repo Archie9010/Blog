@@ -3,14 +3,18 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-    <h1>Add Blog Post</h1>
-    <br/><br/>
-    <div class="form-group">
-        <form method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button class="btn btn-dark">Update</button>
-    </div>
+    {% if user.id == post.author.id %}
+        <h1>Update Blog Post</h1>
+        <br/><br/>
+        <div class="form-group">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-dark">Update</button>
+        </div>
+    {% else %}
+        You Cant Edit or Delete Other User's Posts
+    {% endif %}
 {% else %}
 
     <h3>To Edit, Add or Delete Post You Need To Login or Register First!</h3>
