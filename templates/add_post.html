@@ -13,6 +13,11 @@
             <button class="btn btn-dark">Post</button>
     </div>
 
+<script>
+    var name = "{{ user.id }}";
+    document.getElementById("elder").value = name;
+</script>
+
 {% else %}
 
     <h3>To Edit, Add or Delete Post You Need To Login or Register First!</h3>
