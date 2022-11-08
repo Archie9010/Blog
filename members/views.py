@@ -9,8 +9,15 @@ from .forms import SignUpForm, EditProfileForm, PasswordChangingForm
 from blog.models import Profile
 
 
+class EditProfilePageView(generic.UpdateView):
+    model = Profile
+    template_name = 'registration/edit_profile_page.html'
+    fields = ['bio', 'facebook_url', 'instagram_url', 'youtube_url', 'twitter_url']
+    success_url = reverse_lazy('home')
+
+
 class ShowProfilePageView(DetailView):
-    model = Profile 
+    model = Profile
     template_name = 'registration/user_profile.html'
 
     def get_context_data(self, *args, **kwargs):
