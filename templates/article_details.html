@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<h1>{{ post.title }} -  {{ post.author.id }} </h1>
+<h1>{{ post.title }} -  {{ post.author }} </h1>
 <small>By: 
     {{ post.author.first_name }} 
     {{ post.author.last_name }}
@@ -105,9 +105,8 @@
         <br>
         {{ comment.body }}
         <br/><br/>
-      {% endfor %}
       
-      <a href="{% url 'add_comment' post.pk %}">Add Commenent</a>
+      {% endfor %}
       
   {% endif %}
 

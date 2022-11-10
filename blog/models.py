@@ -12,7 +12,6 @@ class Category(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        # return reverse('article-detail', args=(str(self.id)))
         return reverse('home')
 
 
@@ -38,7 +37,6 @@ class Post(models.Model):
     title_tag = models.CharField(max_length=250)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = RichTextField(blank=True, null=True)
-    # body = models.TextField()
     post_date = models.DateField(auto_now_add=True)
     category = models.CharField(max_length=250, default='city')
     snippet = models.CharField(max_length=250, default='Click link to read blog post!')

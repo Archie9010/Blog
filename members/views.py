@@ -13,7 +13,6 @@ class CreateProfilePageView(CreateView):
     model = Profile
     form_class = ProfilePageForm
     template_name = "registration/create_user_profile_page.html"
-    # fields = '__all__'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -32,7 +31,6 @@ class ShowProfilePageView(DetailView):
     template_name = 'registration/user_profile.html'
 
     def get_context_data(self, *args, **kwargs):
-        # users = Profile.objects.all()
         context = super(ShowProfilePageView, self).get_context_data(*args, **kwargs)
 
         page_user = get_object_or_404(Profile, id=self.kwargs['pk'])
@@ -43,9 +41,7 @@ class ShowProfilePageView(DetailView):
 
 class PasswordsChangeView(PasswordChangeView):
     form_class = PasswordChangingForm
-    # form_class = PasswordChangeForm
     success_url = reverse_lazy("password_success")
-    # success_url = reverse_lazy('home')
 
 
 def password_success(request):
