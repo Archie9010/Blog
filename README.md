@@ -1,6 +1,6 @@
 # Beautiful Castles 
 
-Welcome to [Blog ](https://blog-archie.herokuapp.com) A virtual place where we can share our experiences and learn from one another. Encourages freedom of speech and open discussion to spark new ideas. Helps build friendships with people from all around the world, and make new ones along the way.Blog about anything that interests you, whether it's travel, food or hobbies it's up to you!
+Welcome to [Blog ](https://blog-archie.herokuapp.com) A place where we can share our experiences and learn from one another. Encourages freedom of speech and open discussion to spark new ideas. Helps build friendships with people from all around the world, and make new ones along the way.Blog about anything that interests you, whether it's travel, food or hobbies it's up to you!
 Our blog is a place for people of all walks of life to come together and share their stories. Share your thoughts with complete freedom, without fear. It's a safe space for everyone. Building friendships and traveling the world is just one of the amazing things we do. We are all about nourishing our minds and bodies, so you can find posts about food, hobbies or even mindfulness for your mental health!
 
 ![mockup]()
@@ -32,24 +32,25 @@ Our blog is a place for people of all walks of life to come together and share t
  ## Wireframe
 The wireframe model is created as part of the project planning. Its task is to graphically present the appearance of the application on three different devices: computer - high resolution, tablet - medium resolution, mobile - low resolution. The application will be built on the basis of the created sketch.
 
-![home](media/wireframe-home.png)
-![castles](media/wireframe-castles.png)
-![sign-up](media/wireframe-sign-up.png)
+![home]()
+![castles]()
+![sign-up]()
 
 ## Features
 
 ### Navigation Bar
 
-* Featured at the top of the page, The navigation shows the page name in the left corner: Beautiful Castles that links to the Home page. When hovered over Home, Castles and Contact golden underline appears for easy navigation
+* Featured at the top of the page, The navigation shows the page name in the left corner: My Blog that links to the Home page. When hovered over, Categories, Add Post, Add Category and Logout menu changes color for easy navigation.
 * Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Castles and Contact page and is identical on each page to allow for easy navigation.
 * This section will allow the user to easily navigate from page to page across all devices without having to revert to the previous page via the ‘back’ button.
 
-![menu](media/menu.png)
+![Menu Logged In]()
+![Menu Logged Out]()
 
-### The Page image
+### 
 
-* This is a photo of the castle to allow the user to see what this website is about.
-* This section introduces the user to Beautiful Castles with an eye-catching photo to focus their attention.
+*
+* 
 
 ![background](media/background-castle.png)
 
@@ -88,13 +89,21 @@ The wireframe model is created as part of the project planning. Its task is to g
 | Test Label         |            Test Action           |         Expected Outcome           | Test Outcome    |
 |:------------------ |:---------------------------------|:-----------------------------------|:----------------|
 | Menu Test          |  Responsive navigation bar       | Navigate to the desired page.      | PASS            |
-| Website buttons    |  Responsive button               | Navigate to external websites      | PASS            |
+| Edit/Delete post   |  Responsive button               | Navigate to external websites      | PASS            |
 | Sign-Up button     |  Responsive Sign-Up button       | Navigates to dump sever            | PASS            |
 | Let's go button    |  Responsive Let's go button      | Navigates to gallery               | PASS            |
-| Social media icons |  Responsive Social media icons   | Navigate to social media websites  | PASS            |
+| Social media links |  Responsive Social media icons   | Navigate to social media websites  | PASS            |
+| Login/Logout       |  Responsive                      | Allows to log in and out           | PASS            |
+| Add post           |  Responsive                      | Navigate to add post section       | PASS            |
+| Add category       |  Responsive                      | Allows to add new category         | PASS            |
+| Add post           |  Responsive                      | Allows to add new post             | PASS            |
+| Edit details       |  Responsive                      | Allows to edit details of the post | PASS            |
+| Edit Settings      |  Responsive                      | Allows to edit details of the user | PASS            |
+| Show profile       |  Responsive                      | Allows to view user profile        | PASS            |       
+| Edit/Delete post   |  Responsive                      | Allows to delete/edit post         | PASS            |
 
 
-### Browser Compatibility
+### Browser Compatibilit
 
 * Chrome (97) - Pass
 * firefox (96) - Pass 
