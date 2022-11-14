@@ -1,108 +1,173 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Beautiful Castles 
 
-Welcome Archie9010,
+Welcome to [Blog ](https://blog-archie.herokuapp.com) A virtual place where we can share our experiences and learn from one another. Encourages freedom of speech and open discussion to spark new ideas. Helps build friendships with people from all around the world, and make new ones along the way.Blog about anything that interests you, whether it's travel, food or hobbies it's up to you!
+Our blog is a place for people of all walks of life to come together and share their stories. Share your thoughts with complete freedom, without fear. It's a safe space for everyone. Building friendships and traveling the world is just one of the amazing things we do. We are all about nourishing our minds and bodies, so you can find posts about food, hobbies or even mindfulness for your mental health!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![mockup]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Index 
+* [Technologies Used](#technologies-used)
+* [Fearures](#features)
+* [Contact](#contacts)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
-## Gitpod Reminders
+## Technologies Used
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+ * [HTML5](https://en.wikipedia.org/wiki/HTML5)
+ * [Bootsrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+ * [Djangp](https://en.wikipedia.org/wiki/Django_(web_framework))
+ * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+ * [Cloudinary](https://en.wikipedia.org/wiki/Cloudinary)
+ * [Heroku](https://en.wikipedia.org/wiki/Heroku)
+ * [Chrome](https://en.wikipedia.org/wiki/Google_Chrome)
+ * [Stack Overflow](https://en.wikipedia.org/wiki/Stack_Overflow)
+ * [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php)
+ * [Pep8](https://pypi.org/project/pep8/)
+ * [W3school](https://en.wikipedia.org/wiki/W3Schools)
+ * [Git](https://en.wikipedia.org/wiki/Git) 
+ * [Github](https://en.wikipedia.org/wiki/GitHub) 
 
-`python3 -m http.server`
+ ## Wireframe
+The wireframe model is created as part of the project planning. Its task is to graphically present the appearance of the application on three different devices: computer - high resolution, tablet - medium resolution, mobile - low resolution. The application will be built on the basis of the created sketch.
 
-A blue button should appear to click: _Make Public_,
+![home](media/wireframe-home.png)
+![castles](media/wireframe-castles.png)
+![sign-up](media/wireframe-sign-up.png)
 
-Another blue button should appear to click: _Open Browser_.
+## Features
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Navigation Bar
 
-A blue button should appear to click: _Make Public_,
+* Featured at the top of the page, The navigation shows the page name in the left corner: Beautiful Castles that links to the Home page. When hovered over Home, Castles and Contact golden underline appears for easy navigation
+* Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Castles and Contact page and is identical on each page to allow for easy navigation.
+* This section will allow the user to easily navigate from page to page across all devices without having to revert to the previous page via the ‘back’ button.
 
-Another blue button should appear to click: _Open Browser_.
+![menu](media/menu.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### The Page image
 
-To log into the Heroku toolbelt CLI:
+* This is a photo of the castle to allow the user to see what this website is about.
+* This section introduces the user to Beautiful Castles with an eye-catching photo to focus their attention.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![background](media/background-castle.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Welcome Text
 
-------
+* Short descriptive text welcoming user on the page, Lets's Go button can be found underneath the text that will easily navigate the user to Castle page.
 
-## Release History
+![welcome-text](media/welcome-text.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Castles
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+*  In this section Users will find castles within Europe, all categorized for user convenience. User Can find castles by country, by region, or even by the name of the castle. Explore the history of each one and learn about their architecture. Castle Section is built to be interactive, informative, with colourful images to help a user make the most informed decision on future trips.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![gallery-castle](media/gallery-castle.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Contact
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Sign Up Form
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* Sign up is a section created for users to easily and efficiently create an account on our page also to get support and get more information regards the website. Sign up form is responsive to all screen sizes.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![sign-up](media/sign-up-form.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Footer
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* The footer section includes social media icons to users can find the website on Facebook, Instagram, Twitter and YouTube
+* Copyrights text was added to the footer
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![footer](media/footer.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Testing
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Functionality
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+   
+| Test Label         |            Test Action           |         Expected Outcome           | Test Outcome    |
+|:------------------ |:---------------------------------|:-----------------------------------|:----------------|
+| Menu Test          |  Responsive navigation bar       | Navigate to the desired page.      | PASS            |
+| Website buttons    |  Responsive button               | Navigate to external websites      | PASS            |
+| Sign-Up button     |  Responsive Sign-Up button       | Navigates to dump sever            | PASS            |
+| Let's go button    |  Responsive Let's go button      | Navigates to gallery               | PASS            |
+| Social media icons |  Responsive Social media icons   | Navigate to social media websites  | PASS            |
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Browser Compatibility
 
-------
+* Chrome (97) - Pass
+* firefox (96) - Pass 
+* Safari (15.2)- Pass 
+* Edge (97) - Pass 
 
-## FAQ about the uptime script
+### Bugs
 
-**Why have you added this script?**
+* No bugs found
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Validator Testing
 
-**How will this affect me?**
+* HTML
+  - No errors were found when passing throught the [W3C validator](https://validator.w3.org/)
+![html-test](media/html-test.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* CSS
+  - No errors were found when passing through the [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+  ![css-test](media/css-test.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* Accessibility
+  - Colors and fonts chosen are easy to read and accessible by running it through lighthouse in dev tools.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![performance01](media/performance01.png)
 
-**So….?**
+### Metrics
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![performance02](media/performance02.png)
 
-**Can I opt out?**
+## Deployment
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### How to clone the repository
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* Go to the https://github.com/Archie9010/Beautiful-Castles repository on GitHub
+* Click the "Code" button to the right of the screen, click HTTPs and copy the link there
+* Open a GitBash terminal and navigate to the directory where you want to locate the clone
+* On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
 
-**Anything more?**
+The site was deployed to GitHub pages. The steps to deploy are followed:
+* Logged into GitHub
+* In the GitHub repository, navigate to the Settings tab.
+* From the drop-down menu, select the Main Branch
+* Once the Main branch has been selected, the page provided the link to the completed website.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Live link: [Beautiful Castles](https://archie9010.github.io/Beautiful-Castles/)
 
----
+## Features left to implement
 
-Happy coding!
+* Search bar
+   - Let Users Find Things Faster. A search bar allows users to find what they're looking for quickly. No matter where each user enters your site, a search bar will give them the option to find particular topics or pages fast.
+* Live Chat
+   - Live Chat helps you greet users pro-actively while they are going through the website using the 'auto greetings' function and it also allows them to chat with you anonymously without providing their details like email or phone.
+* Blog 
+   - Writing posts about topics users will find interesting and helpful. 
+
+## Credits
+
+* The code to build sign up form was taken from I Love Running Project
+* Brian Macharia- Mentor support, guidance, tips, and key things to look out for throughout the project.
+
+### Content
+
+* All description text of the Castles were taken from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
+* All other content was written by the developer
+
+### Media
+
+* The fonts used were imported from [Google Fonts](https://fonts.google.com/)
+* The icon in the header, footer were taken from [Font Awesomne](https://fontawesome.com/)
+* Background Castle picture on the main page were taken from [Pexels](https://www.pexels.com/)
+* All images in Castle section were downloaded from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
+
+### Code
+
+* Code on how to do the shadow-box used on pictures in the gallery came from information on [W3Schools](https://www.w3schools.com/css/css3_shadows_box.asp)
+* Code on how to create sig up box was based on CI Love Running Project
