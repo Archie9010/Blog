@@ -47,12 +47,15 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'crispy_forms',
     'blog',
     'members',
     'ckeditor'
 ]
 
 SITE_ID= 1
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -61,7 +61,7 @@ class ArticleDetailView(DetailView):
         context['total_likes'] = total_likes
         context['liked'] = liked
         return context
-
+        
 
 class AddPostView(CreateView):
     model = Post

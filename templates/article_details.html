@@ -3,10 +3,11 @@
 {% block title %}
 {{ post.title_tag }}
 {% endblock %}
+{% load crispy_forms_tags %}
 
 {% block content %}
 
-<h1>{{ post.title }} -  {{ post.author }} </h1>
+<h1>{{ post.title }}   ({{ post.author }}) </h1>
 <small>By: 
     {{ post.author.first_name }} 
     {{ post.author.last_name }}
@@ -78,8 +79,7 @@
           | <a href= "{{ post.author.profile.twitter_url }}">Twitter</a>
         {% endif %}
         </p>
-        <p class="card-text">{{ post.author.profile.bio }}</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text">{{ post.author.profile.bio|truncatewords:35 }}</p> 
       </div>
     </div>
   </div>
@@ -87,6 +87,7 @@
 <br/>
 <hr>
 <h2>Comments</h2>
+
 <br/>
  {% if not post.comments.all %}
     No Comments Yet
@@ -109,6 +110,20 @@
       {% endfor %}
       
   {% endif %}
+
+
+
+  <h1>Add Comment</h1>
+  <br/><br/>
+  <div class="form-group">
+      <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button class="btn btn-dark">Add Comment</button>
+  </div>
+
+  
+
 
 <br/><br/>
 
