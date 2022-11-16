@@ -5,9 +5,6 @@ from .forms import PostForm, EditForm, CommentForm
 from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 
-# def home(request):
-#     return render(request, 'home.html', {})
-
 
 def LikeView(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
@@ -46,7 +43,7 @@ def CategoryView(request, cats):
 
 class ArticleDetailView(DetailView):
     model = Post
-    template_name = 'article_details.html'
+    template_name = 'article_detail.html'
 
     def get_context_data(self, *args, **kwargs):
         cat_menu = Category.objects.all()
@@ -60,8 +57,9 @@ class ArticleDetailView(DetailView):
         context['cat_menu'] = cat_menu
         context['total_likes'] = total_likes
         context['liked'] = liked
+
         return context
-        
+
 
 class AddPostView(CreateView):
     model = Post

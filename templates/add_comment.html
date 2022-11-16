@@ -3,15 +3,20 @@
 
 {% block content %}
 
+    {% if user.is_authenticated %}
+        <h1>Add Comment</h1>
+        <br/><br/>
+        <div class="form-group">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-dark">Add Comment</button>
+        </div>
 
-    <h1>Add Comment</h1>
-    <br/><br/>
-    <div class="form-group">
-        <form method="POST" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button class="btn btn-dark">Add Comment</button>
-    </div>
+    {% else %}
 
+    <h2>You have to Login or Register to Comment</h2>
+
+    {% endif %}
     
 {% endblock %}

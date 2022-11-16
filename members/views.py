@@ -12,7 +12,7 @@ from blog.models import Profile
 class CreateProfilePageView(CreateView):
     model = Profile
     form_class = ProfilePageForm
-    template_name = "registration/create_user_profile_page.html"
+    template_name = 'registration/create_user_profile_page.html'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -41,7 +41,7 @@ class ShowProfilePageView(DetailView):
 
 class PasswordsChangeView(PasswordChangeView):
     form_class = PasswordChangingForm
-    success_url = reverse_lazy("password_success")
+    success_url = reverse_lazy('password_success')
 
 
 def password_success(request):
