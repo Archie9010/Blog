@@ -32,9 +32,30 @@ Our blog is a place for people of all walks of life to come together and share t
  ## Wireframe
 The wireframe model is created as part of the project planning. Its task is to graphically present the appearance of the application on three different devices: computer - high resolution, tablet - medium resolution, mobile - low resolution. The application will be built on the basis of the created sketch.
 
-![home]()
-![castles]()
-![sign-up]()
+### Landing Page
+![home](blog/static/images/home.png)
+### Landing Page Medium 
+![home](blog/static/images/home_md.png)
+### Landing Page Small
+![home](blog/static/images/home_sm.png)
+
+## Post Details Page
+
+### User Post Details Large
+![profile](blog/static/images/profile_lg.png)
+### User Post Details Medium 
+![profile](blog/static/images/profile_md.png)
+### User Post Details Small
+![profile](blog/static/images/profile_sm.png)
+
+## Login 
+
+### Login Large
+![login](blog/static/images/login_lg.png)
+### Login Medium
+![login](blog/static/images/login_md.png)
+### Login Small
+![login](blog/static/images/login_sm.png)
 
 ## Features
 

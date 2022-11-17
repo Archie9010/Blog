@@ -1,8 +1,2 @@
-html>body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: var(--bs-gray-900);
-    font: 1rem/1.5 var(--bs-font-sans-serif);
-  }
+
   
