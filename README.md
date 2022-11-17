@@ -185,8 +185,6 @@ The site was deployed to Heroku. The steps to deploy are followed:
 
 Live link: [My Blog](https://blog-archie.herokuapp.com/)
 
-## Features left to implement
-
 
 ## Credits
 
@@ -194,6 +192,7 @@ Live link: [My Blog](https://blog-archie.herokuapp.com/)
 * Hello Django and Django blog from code institute
 * Stack overflow to support debugging 
 * Youtube Tutorials 
+* CI Tutor Support for Help with code
 * [Bootstrap documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 * [Django documentation](hhttps://docs.djangoproject.com/en/4.0/)
 * The code was inspiered by PP4 DjangoBlog.
