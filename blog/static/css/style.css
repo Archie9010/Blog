@@ -8,11 +8,15 @@ font-family: 'Roboto', sans-serif;
 }
 
 
+
 html>body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: linear-gradient(to bottom right, #A7CFDF 24%, #A964D1 47%, #2F6EB8 83%);
+    background-color: #dbdbde;
+  
+    background-image: radial-gradient(#fffdfd 0.6000000000000001px, #c4c4c9 0.6000000000000001px);
+    background-size: 12px 12px;
   }
   
 main {
