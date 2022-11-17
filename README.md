@@ -73,12 +73,36 @@ The wireframe model is created as part of the project planning. Its task is to g
 ### Menu Current user
 ![Menu Logged Out](blog/static/images/menu_user.png)
 
-
 ### Register Page
 
 * Register is a section created for users to easily and efficiently create an account on our page. Register form is responsive to all screen sizes.
 
-![register](blog/static/images/register.png)
+![register](blog/static/images/register_user.png)
+
+### Login Page 
+
+* Login page form allows user to login into user account
+
+![Login](blog/static/images/login_page.png)
+
+### Change Password
+
+* Change password form allows user to update ppassword.
+
+![Change Password](blog/static/images/change_password.png)
+
+### Change User Details
+
+* Change User Details allows user to updated details on his profile.
+
+![Change User Details](blog/static/images/change_user_details.png)
+
+### Add Post
+
+* Add post allows user to post articles. 
+
+![Add Post](blog/static/images/add_post.png)
+
 
 ## Testing
 
@@ -104,6 +128,9 @@ The wireframe model is created as part of the project planning. Its task is to g
 | Edit/Delete post   |  Responsive User page            | Allows to delete/edit post         | PASS            |
 
 
+### Performance Test 
+  ![Performance](blog/static/images/performance.png)
+
 ### Browser Compatibilit
 
 * Chrome (97) - Pass
@@ -113,7 +140,7 @@ The wireframe model is created as part of the project planning. Its task is to g
 
 ### Bugs
 
-* No bugs found
+* 
 
 ### Validator Testing
 
@@ -135,7 +162,7 @@ The wireframe model is created as part of the project planning. Its task is to g
 
 ### How to clone the repository
 
-* Go to the https://github.com/Archie9010/ repository on GitHub
+* Go to the https://github.com/Archie9010/Blog repository on GitHub
 * Click the "Code" button to the right of the screen, click HTTPs and copy the link there
 * Open a GitBash terminal and navigate to the directory where you want to locate the clone
 * On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
@@ -163,22 +190,18 @@ Live link: [My Blog](https://blog-archie.herokuapp.com/)
 
 ## Credits
 
-* The code to build sign up form was taken from I Love Running Project
+* Heroku deployment instructions from Code Institute
+* Hello Django and Django blog from code institute
+* Stack overflow to support debugging 
+* Youtube Tutorials 
+* [Bootstrap documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* [Django documentation](hhttps://docs.djangoproject.com/en/4.0/)
+* The code was inspiered by PP4 DjangoBlog.
 * Brian Macharia- Mentor support, guidance, tips, and key things to look out for throughout the project.
 
 ### Content
 
-* All description text of the Castles were taken from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
+* Navbar and Forms styles was taken from Bootsrap and Django
 * All other content was written by the developer
 
-### Media
 
-* The fonts used were imported from [Google Fonts](https://fonts.google.com/)
-* The icon in the header, footer were taken from [Font Awesomne](https://fontawesome.com/)
-* Background Castle picture on the main page were taken from [Pexels](https://www.pexels.com/)
-* All images in Castle section were downloaded from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page)
-
-### Code
-
-* Code on how to do the shadow-box used on pictures in the gallery came from information on [W3Schools](https://www.w3schools.com/css/css3_shadows_box.asp)
-* Code on how to create sig up box was based on CI Love Running Project
