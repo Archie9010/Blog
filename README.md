@@ -1,9 +1,9 @@
 # Beautiful Castles 
 
-Welcome to [Blog ](https://blog-archie.herokuapp.com) A place where we can share our experiences and learn from one another. Encourages freedom of speech and open discussion to spark new ideas. Helps build friendships with people from all around the world, and make new ones along the way.Blog about anything that interests you, whether it's travel, food or hobbies it's up to you!
+Welcome to [Blog ](https://blog-archie.herokuapp.com) A place where we can share our experiences and learn from one another. Encourages freedom of speech and open discussion to spark new ideas. Helps build friendships with people from all around the world, and make new ones along the way. Blog about anything that interests you, whether it's travel, food or hobbies it's up to you!
 Our blog is a place for people of all walks of life to come together and share their stories. Share your thoughts with complete freedom, without fear. It's a safe space for everyone. Building friendships and traveling the world is just one of the amazing things we do. We are all about nourishing our minds and bodies, so you can find posts about food, hobbies or even mindfulness for your mental health!
 
-![mockup]()
+![mockup](blog/static/images/mockup.png)
 
 ## Index 
 * [Technologies Used](#technologies-used)
@@ -62,66 +62,46 @@ The wireframe model is created as part of the project planning. Its task is to g
 ### Navigation Bar
 
 * Featured at the top of the page, The navigation shows the page name in the left corner: My Blog that links to the Home page. When hovered over, Categories, Add Post, Add Category and Logout menu changes color for easy navigation.
-* Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Castles and Contact page and is identical on each page to allow for easy navigation.
-* This section will allow the user to easily navigate from page to page across all devices without having to revert to the previous page via the ‘back’ button.
+* Featured on all three pages, the full responsive navigation bar includes links to, Home page, Register or Login. When logged in includes: Categories, Add post, Add Category and User First and last name displayed on the left site of the navbar with options to edit profile, edit settings, show profile page and logout. 
 
-![Menu Logged In]()
-![Menu Logged Out]()
+### Menu Logged In
+![Menu Logged In](blog/static/images/menu_login.png)
 
-### 
+### Menu Logged Out
+![Menu Logged Out](blog/static/images/menu_logout.png)
 
-*
-* 
+### Menu Current user
+![Menu Logged Out](blog/static/images/menu_user.png)
 
-![background](media/background-castle.png)
 
-### Welcome Text
+### Register Page
 
-* Short descriptive text welcoming user on the page, Lets's Go button can be found underneath the text that will easily navigate the user to Castle page.
+* Register is a section created for users to easily and efficiently create an account on our page. Register form is responsive to all screen sizes.
 
-![welcome-text](media/welcome-text.png)
-
-### Castles
-
-*  In this section Users will find castles within Europe, all categorized for user convenience. User Can find castles by country, by region, or even by the name of the castle. Explore the history of each one and learn about their architecture. Castle Section is built to be interactive, informative, with colourful images to help a user make the most informed decision on future trips.
-
-![gallery-castle](media/gallery-castle.png)
-
-## Contact
-
-### Sign Up Form
-
-* Sign up is a section created for users to easily and efficiently create an account on our page also to get support and get more information regards the website. Sign up form is responsive to all screen sizes.
-
-![sign-up](media/sign-up-form.png)
-
-### Footer
-
-* The footer section includes social media icons to users can find the website on Facebook, Instagram, Twitter and YouTube
-* Copyrights text was added to the footer
-
-![footer](media/footer.png)
+![register](blog/static/images/register.png)
 
 ## Testing
 
 ### Functionality
 
+### Manual Testing
    
 | Test Label         |            Test Action           |         Expected Outcome           | Test Outcome    |
 |:------------------ |:---------------------------------|:-----------------------------------|:----------------|
-| Menu Test          |  Responsive navigation bar       | Navigate to the desired page.      | PASS            |
-| Edit/Delete post   |  Responsive button               | Navigate to external websites      | PASS            |
-| Sign-Up button     |  Responsive Sign-Up button       | Navigates to dump sever            | PASS            |
-| Let's go button    |  Responsive Let's go button      | Navigates to gallery               | PASS            |
+| Menu Test          |  Responsive Nav bar              | Navigate to the desired page.      | PASS            |
+| Edit/Delete post   |  Responsive Button               | Navigate to external websites      | PASS            |
+| Login button (form)|  Responsive Login button.        | Navigates to home page             | PASS            |
+| Register           |  Responsive Register button      | Navigates to home page             | PASS            |
 | Social media links |  Responsive Social media icons   | Navigate to social media websites  | PASS            |
-| Login/Logout       |  Responsive                      | Allows to log in and out           | PASS            |
-| Add post           |  Responsive                      | Navigate to add post section       | PASS            |
-| Add category       |  Responsive                      | Allows to add new category         | PASS            |
-| Add post           |  Responsive                      | Allows to add new post             | PASS            |
-| Edit details       |  Responsive                      | Allows to edit details of the post | PASS            |
-| Edit Settings      |  Responsive                      | Allows to edit details of the user | PASS            |
-| Show profile       |  Responsive                      | Allows to view user profile        | PASS            |       
-| Edit/Delete post   |  Responsive                      | Allows to delete/edit post         | PASS            |
+| Login/Logout       |  Responsive Nav bar              | Allows to log in and out           | PASS            |
+| Add post           |  Responsive User page            | Navigate to add post section       | PASS            |
+| Add category       |  Responsive Nav bar              | Allows to add new category         | PASS            |
+| Add comment        |  Responsive User page            | Allows to add new comment          | PASS            |
+| Search by cat      |  Responsive User page            | Allows user to search by categories| PASS            |
+| Edit details       |  Responsive User page            | Navigates to edit details page     | PASS            |
+| Edit Settings      |  Responsive User page            | Navigates to edit settings page    | PASS            |
+| Show profile       |  Responsive User page            | Navigates to user profile page     | PASS            |       
+| Edit/Delete post   |  Responsive User page            | Allows to delete/edit post         | PASS            |
 
 
 ### Browser Compatibilit
@@ -138,47 +118,48 @@ The wireframe model is created as part of the project planning. Its task is to g
 ### Validator Testing
 
 * HTML
-  - No errors were found when passing throught the [W3C validator](https://validator.w3.org/)
-![html-test](media/html-test.png)
+  - Code pass W3C HTML without errors
 
 * CSS
-  - No errors were found when passing through the [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
-  ![css-test](media/css-test.png)
+  - Code pass W3C CSS without errors
+
+* PEP8 
+  - Code pass PEP8 without critical errors
 
 * Accessibility
   - Colors and fonts chosen are easy to read and accessible by running it through lighthouse in dev tools.
 
 ![performance01](media/performance01.png)
 
-### Metrics
-
-![performance02](media/performance02.png)
-
 ## Deployment
 
 ### How to clone the repository
 
-* Go to the https://github.com/Archie9010/Beautiful-Castles repository on GitHub
+* Go to the https://github.com/Archie9010/ repository on GitHub
 * Click the "Code" button to the right of the screen, click HTTPs and copy the link there
 * Open a GitBash terminal and navigate to the directory where you want to locate the clone
 * On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
 
-The site was deployed to GitHub pages. The steps to deploy are followed:
-* Logged into GitHub
-* In the GitHub repository, navigate to the Settings tab.
-* From the drop-down menu, select the Main Branch
-* Once the Main branch has been selected, the page provided the link to the completed website.
+The site was deployed to Heroku. The steps to deploy are followed:
+* Push the latest code to GitHub.
+* Go to Heroku
+* Select new in the top right corner.
+* Create a new app.
+* Enter the app name and select Europe as the region.
+* Connect to GitHub.
+* Search for repo-name.
+* Select connect to the relevant repo you want to deploy.
+* Select the settings tab.
+* Add buildpack
+* Select Python, then save changes.
+* Make sure Heroku/Python is at the top of the list, followed by Heroku/Nodejs
+* Navigate to the deploy tab
+* Scroll down to Manual Deploy and select deploy branch.
 
-Live link: [Beautiful Castles](https://archie9010.github.io/Beautiful-Castles/)
+Live link: [My Blog](https://blog-archie.herokuapp.com/)
 
 ## Features left to implement
 
-* Search bar
-   - Let Users Find Things Faster. A search bar allows users to find what they're looking for quickly. No matter where each user enters your site, a search bar will give them the option to find particular topics or pages fast.
-* Live Chat
-   - Live Chat helps you greet users pro-actively while they are going through the website using the 'auto greetings' function and it also allows them to chat with you anonymously without providing their details like email or phone.
-* Blog 
-   - Writing posts about topics users will find interesting and helpful. 
 
 ## Credits
 
