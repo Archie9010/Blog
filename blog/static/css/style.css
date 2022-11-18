@@ -14,14 +14,10 @@ html>body {
     min-height: 100vh;
     flex-direction: column;
     background-color: #dbdbde;
-  
     background-image: radial-gradient(#fffdfd 0.6000000000000001px, #c4c4c9 0.6000000000000001px);
-    background-size: 12px 12px;
   }
   
-main {
-    flex: 1 0 auto;
-  }
+
 
   .nav-font {
     font-family: 'Roboto', cursive;
@@ -30,14 +26,16 @@ main {
 
 /* Small devices (landscape phones, 576px and up) */
   @media  (min-width: 576px) {
-
+    .img { height:100%; width:100%;}
+    
   
   }
   
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
   
-  
+    .img { height:100%; width:100%;}
+   
   
   }
   

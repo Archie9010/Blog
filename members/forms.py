@@ -10,7 +10,7 @@ class ProfilePageForm(forms.ModelForm):
         fields = ('bio', 'profile_pic', 'facebook_url', 'instagram_url', 'youtube_url', 'twitter_url')
 
         widgets = {
-            'Bio': forms.TextInput(attrs={'class': 'form-control'}),
+            'bio': forms.TextInput(attrs={'class': 'form-control'}),
             'facebook_url': forms.TextInput(attrs={'class': 'form-control'}),
             'instagram_url': forms.TextInput(attrs={'class': 'form-control'}),
             'youtube_url': forms.TextInput(attrs={'class': 'form-control'}),

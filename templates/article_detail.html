@@ -28,7 +28,7 @@
 <br/>
 
 {% if post.header_image %}
-  <img src="{{ post.header_image.url }}" width=900 height=600>
+  <img class='img' src="{{ post.header_image.url }}" width=900 height=600>
 {% endif %}
 <br/>
 <br/>
@@ -52,7 +52,7 @@
 <br/><br/>
 
 <div>
-  <div class="row no-gutters">
+  <div class="center">
     <div class="col-md-2">
 {% if post.author.profile.profile_pic %}
     <img src="{{ post.author.profile.profile_pic.url }}" width=190 height=180 class="rounded-circle"  alt="IMG">
@@ -60,7 +60,7 @@
     <img src="{% static 'theblog/images/default.png' %}" width=200 height=200 class="rounded-circle"  alt="IMG">
 {% endif %}
     </div>
-    <div class="col-md-10">
+    <div class="col-md-12">
       <div class="card-body">
         <h5 class="card-title"> {{ post.author.first_name }} {{ post.author.last_name }}</h5>
         <p class="small text-muted">
