@@ -19,7 +19,6 @@ html>body {
     font-weight: 800;
   }
 
-
   /* Extra Small devices (landscape phones, 350px and up) */
   @media  (min-width: 350px) {
     .img { height:100%; width:100%;}
