@@ -7,35 +7,32 @@ font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 }
 
-
-
 html>body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: #dbdbde;
-    background-image: radial-gradient(#fffdfd 0.6000000000000001px, #c4c4c9 0.6000000000000001px);
+  background-color: #d5d5e3;
+  background-image:  radial-gradient(#ffffff 0.9500000000000001px, transparent 0.9500000000000001px), radial-gradient(#ffffff 0.9500000000000001px, #d5d5e3 0.9500000000000001px);
+  background-size: 38px 38px;
+  background-position: 0 0,19px 19px;
   }
-  
-
 
   .nav-font {
     font-family: 'Roboto', cursive;
     font-weight: 800;
   }
 
-/* Small devices (landscape phones, 576px and up) */
+
+  /* Extra Small devices (landscape phones, 350px and up) */
+  @media  (min-width: 350px) {
+    .img { height:100%; width:100%;}
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
   @media  (min-width: 576px) {
     .img { height:100%; width:100%;}
-    
-  
   }
   
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
   
     .img { height:100%; width:100%;}
-   
-  
   }
   
