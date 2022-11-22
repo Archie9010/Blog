@@ -3,7 +3,7 @@
 Welcome to [Blog ](https://blog-archie.herokuapp.com) A place where we can share our experiences and learn from one another. Encourages freedom of speech and open discussion to spark new ideas. Helps build friendships with people from all around the world, and make new ones along the way. Blog about anything that interests you, whether it's travel, food or hobbies it's up to you!
 Our blog is a place for people of all walks of life to come together and share their stories. Share your thoughts with complete freedom, without fear. It's a safe space for everyone. Building friendships and traveling the world is just one of the amazing things we do. We are all about nourishing our minds and bodies, so you can find posts about food, hobbies or even mindfulness for your mental health!
 
-![mockup](blog/static/images/mockup.png)
+![mockup](blog/images/mockup.png)
 
 ## Index 
 * [Technologies Used](#technologies-used)
@@ -33,29 +33,29 @@ Our blog is a place for people of all walks of life to come together and share t
 The wireframe model is created as part of the project planning. Its task is to graphically present the appearance of the application on three different devices: computer - high resolution, tablet - medium resolution, mobile - low resolution. The application will be built on the basis of the created sketch.
 
 ### Landing Page
-![home](blog/static/images/home.png)
+![home](blog/images/home.png)
 ### Landing Page Medium 
-![home](blog/static/images/home_md.png)
+![home](blog/images/home_md.png)
 ### Landing Page Small
-![home](blog/static/images/home_sm.png)
+![home](blog/images/home_sm.png)
 
 ## Post Details Page
 
 ### User Post Details Large
-![profile](blog/static/images/profile_lg.png)
+![profile](blog/images/profile_lg.png)
 ### User Post Details Medium 
-![profile](blog/static/images/profile_md.png)
+![profile](blog/images/profile_md.png)
 ### User Post Details Small
-![profile](blog/static/images/profile_sm.png)
+![profile](blog/images/profile_sm.png)
 
 ## Login 
 
 ### Login Large
-![login](blog/static/images/login_lg.png)
+![login](blog/images/login_lg.png)
 ### Login Medium
-![login](blog/static/images/login_md.png)
+![login](blog/images/login_md.png)
 ### Login Small
-![login](blog/static/images/login_sm.png)
+![login](blog/images/login_sm.png)
 
 ## Features
 
@@ -65,43 +65,43 @@ The wireframe model is created as part of the project planning. Its task is to g
 * Featured on all three pages, the full responsive navigation bar includes links to, Home page, Register or Login. When logged in includes: Categories, Add post, Add Category and User First and last name displayed on the left site of the navbar with options to edit profile, edit settings, show profile page and logout. 
 
 ### Menu Logged In
-![Menu Logged In](blog/static/images/menu_login.png)
+![Menu Logged In](blog/images/menu_login.png)
 
 ### Menu Logged Out
-![Menu Logged Out](blog/static/images/menu_logout.png)
+![Menu Logged Out](blog/images/menu_logout.png)
 
 ### Menu Current user
-![Menu Logged Out](blog/static/images/menu_user.png)
+![Menu Logged Out](blog/images/menu_user.png)
 
 ### Register Page
 
 * Register is a section created for users to easily and efficiently create an account on our page. Register form is responsive to all screen sizes.
 
-![register](blog/static/images/register_user.png)
+![register](blog/images/register_user.png)
 
 ### Login Page 
 
 * Login page form allows user to login into user account
 
-![Login](blog/static/images/login_page.png)
+![Login](blog/images/login_page.png)
 
 ### Change Password
 
 * Change password form allows user to update ppassword.
 
-![Change Password](blog/static/images/change_password.png)
+![Change Password](blog/images/change_password.png)
 
 ### Change User Details
 
 * Change User Details allows user to updated details on his profile.
 
-![Change User Details](blog/static/images/change_user_details.png)
+![Change User Details](blog/images/change_user_details.png)
 
 ### Add Post
 
 * Add post allows user to post articles. 
 
-![Add Post](blog/static/images/add_post.png)
+![Add Post](blog/images/add_post.png)
 
 
 ## Testing
@@ -129,7 +129,7 @@ The wireframe model is created as part of the project planning. Its task is to g
 
 
 ### Performance Test 
-  ![Performance](blog/static/images/performance.png)
+  ![Performance](blog/images/performance.png)
 
 ### Browser Compatibilit
 
