@@ -156,7 +156,6 @@ The wireframe model is created as part of the project planning. Its task is to g
 * Accessibility
   - Colors and fonts chosen are easy to read and accessible by running it through lighthouse in dev tools.
 
-![performance01](media/performance01.png)
 
 ## Deployment
 
@@ -196,11 +195,16 @@ Live link: [My Blog](https://blog-archie.herokuapp.com/)
 * [Bootstrap documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 * [Django documentation](hhttps://docs.djangoproject.com/en/4.0/)
 * The code was inspiered by PP4 DjangoBlog.
+* Post Display on landing page inspiered by CodeStar Blog by Code Insitute 
+* CSS Background Pattern was taken from [CSS Background Website](https://www.magicpattern.design/tools/css-backgrounds)
 * Brian Macharia- Mentor support, guidance, tips, and key things to look out for throughout the project.
 
 ### Content
 
 * Navbar and Forms styles was taken from Bootsrap and Django
+* Pictures were downloaded from Pexele
 * All other content was written by the developer
+
+
 
 
