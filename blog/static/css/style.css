@@ -7,8 +7,6 @@ font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 }
 
-
-
 html>body {
   background-color: #d5d5e3;
   background-image:  radial-gradient(#ffffff 0.9500000000000001px, transparent 0.9500000000000001px), radial-gradient(#ffffff 0.9500000000000001px, #d5d5e3 0.9500000000000001px);
@@ -18,11 +16,13 @@ html>body {
   height: 100%;
   }
 
-  .nav-font {
+
+.nav-font {
     font-family: 'Roboto', cursive;
     font-weight: 800;
   }
 
+/* Landing Page Image Container  */
 .image-container {
   position: relative;
 }
@@ -60,6 +60,7 @@ html>body {
   color: lightgray;
 }
 
+/* Form */
 .login-form {
   box-sizing: border-box;
   padding: 2rem;
@@ -71,7 +72,7 @@ html>body {
   margin-bottom: 10%;
 }
 
-
+/* Footer */
 .footer {
   width: 100%;
   margin-top: 10%;
@@ -80,8 +81,6 @@ html>body {
   right:0;
   height:30px;
 }
-
-
 
   /* Extra Small devices (landscape phones, 350px and up) */
   @media  (min-width: 350px) {
@@ -98,7 +97,6 @@ html>body {
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-  
     .img { height:100%; width:100%;}
   }
   
