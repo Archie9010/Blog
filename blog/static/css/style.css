@@ -17,6 +17,10 @@ html>body {
   }
 
 
+h1 {
+  position: relative;
+} 
+
 .nav-font {
     font-family: 'Roboto', cursive;
     font-weight: 800;
