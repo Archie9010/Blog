@@ -108,7 +108,7 @@ html>body {
 
   /* Small devices (landscape phones, 576px and up) */
   @media  (min-width: 576px) {
-    .img { height:100%; width:100%;}
+    .img { height:100%; width:80%;}
     .login-form {width: 90%;}
   }
   
