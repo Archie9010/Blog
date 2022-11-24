@@ -2,17 +2,20 @@
 {% block title %}
     Edit Profile Page
 {% endblock %}
+{% load crispy_forms_tags %}
 
+<br/><br/>
 {% block content %}
+
+<h1>Edit Profile Page</h1>
 
 {% if user.is_authenticated %}
         {% if user.id == profile.user.id %}
-        <h1>Edit Profile Page</h1>
         
         <div class="form-group login-form">
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form.as_p }}
+                {{ form|crispy }}
                 <button class="btn btn-dark">Update Profile Page</button>
         </div>
 

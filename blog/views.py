@@ -53,6 +53,7 @@ class ArticleDetailView(DetailView):
         total_likes = total.total_likes()
 
         liked = False
+        
         if total.likes.filter(id=self.request.user.id).exists():
             liked = True
         context['cat_menu'] = cat_menu
