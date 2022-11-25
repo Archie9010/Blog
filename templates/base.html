@@ -9,17 +9,16 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="icon" type="image/xicon" href="{% static 'favicon/favicon.ico' %}">
     <script src="https://kit.fontawesome.com/9b6737669e.js" crossorigin="anonymous"></script>
-
     <title> 
         {% block title %}
-            My Blog
+            BlogSeed
         {% endblock %}
     </title>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark nav-font ">
-      <a class="navbar-brand" href="{% url 'home' %}">My Blog</a>
+      <a class="navbar-brand" href="{% url 'home' %}"><i class="fa-solid fa-seedling"></i>  BlogSeed</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -169,7 +168,7 @@
       
         <!-- Copyright -->
         <div class="text-center p-3 text-dark">
-          © 2020 Copyright:
+          © 2022 Copyright:
           <a class="text-black">Artur Bozyk</a>
         </div>
         <!-- Copyright -->

@@ -23,6 +23,10 @@ html>body {
   
 /* Navbar */
 
+.nav-logo {
+  color: green;
+}
+
 .nav-font {
     font-family: 'Roboto', cursive;
     font-weight: 800;
@@ -114,7 +118,7 @@ html>body {
   
 
   /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    .img { height:100%; width:100%;}
-  }
+   @media (min-width: 768px) {
+    .img { height:80%; width:80%;}
+  } 
   
