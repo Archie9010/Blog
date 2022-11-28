@@ -9,7 +9,7 @@
 
 <br/>
 <br/>
-<h1>{{ post.title }} </h1>
+<h1>{{ post.title|capfirst }} </h1>
 <small>By: 
     {{ post.author.first_name }} 
     {{ post.author.last_name }}
@@ -52,7 +52,7 @@
 <br/><br/>
 
 <div>
-  <div class="center">
+  <div class="center" style="display: flex">
     <div class="col-md-2">
 {% if post.author.profile.profile_pic %}
     <img src="{{ post.author.profile.profile_pic.url }}" width=190 height=160 class="rounded-circle"  alt="IMG">
@@ -60,7 +60,7 @@
     <img src="{% static 'theblog/images/default.png' %}" width=200 height=200 class="rounded-circle"  alt="IMG">
 {% endif %}
     </div>
-    <div class="col-md-12">
+    <div class="col-md-10">
       <div class="card-body">
         <h5 class="card-title"> {{ post.author.first_name }} {{ post.author.last_name }}</h5>
         <p class="small text-muted">

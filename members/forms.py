@@ -10,11 +10,11 @@ class ProfilePageForm(forms.ModelForm):
         fields = ('profile_pic', 'facebook_url', 'instagram_url', 'youtube_url', 'twitter_url', 'bio')
 
         widgets = {
-            'facebook_url': forms.TextInput(attrs={'class': 'form-control'}),
-            'instagram_url': forms.TextInput(attrs={'class': 'form-control'}),
-            'youtube_url': forms.TextInput(attrs={'class': 'form-control'}),
-            'twitter_url': forms.TextInput(attrs={'class': 'form-control'}),
-            'Bio': forms.TextInput(attrs={'class': 'form-control'}),
+            'facebook_url': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Please Enter Full URL e.g. www.site.com/handle'}),
+            'instagram_url': forms.TextInput(attrs={'class': 'form-control','placeholder': 'Please Enter Full URL e.g. www.site.com/handle'}),
+            'youtube_url': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Please Enter Full URL e.g. www.site.com/handle'}),
+            'twitter_url': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Please Enter Full URL e.g. www.site.com/handle'}),
+            'Bio': forms.Textarea(attrs={'class': 'form-control'}),
             }
 
 

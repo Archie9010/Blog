@@ -36,7 +36,7 @@ class Post(models.Model):
     header_image = models.ImageField(null=True, blank=True, upload_to='images/')
     title_tag = models.CharField(max_length=250)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    body = RichTextField(blank=True, null=True)
+    body = RichTextField(blank=True, null=False)
     post_date = models.DateField(auto_now_add=True)
     category = models.CharField(max_length=250, default='city')
     snippet = models.CharField(max_length=250, default='Click link to read blog post!')

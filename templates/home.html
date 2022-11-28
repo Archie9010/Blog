@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                             <a href="{% url 'article-detail' post.pk %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
+                                <h2 class="card-title">{{ post.title|capfirst }}</h2>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr />

@@ -7,6 +7,7 @@ from django.http import HttpResponseRedirect
 
 
 def LikeView(request, pk):
+    """ add like function """
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
     liked = False
     if post.likes.filter(id=request.user.id).exists():
@@ -19,6 +20,7 @@ def LikeView(request, pk):
 
 
 class HomeView(ListView):
+    """ add home view template """
     model = Post
     template_name = 'home.html'
     ordering = ['-post_date']
@@ -32,6 +34,7 @@ class HomeView(ListView):
 
 
 def CategoryView(request, cats):
+    """ add category menu function """
     category_posts = Post.objects.filter(category=cats.replace('-', ' '))
     return render(request, 'categories.html', {'cats': cats.title().replace('-', ' '), 'category_posts':category_posts})
 
@@ -43,6 +46,7 @@ def CategoryView(request, cats):
 
 
 class ArticleDetailView(DetailView):
+    """ add article details view template """
     model = Post
     template_name = 'article_detail.html'
 
@@ -64,6 +68,7 @@ class ArticleDetailView(DetailView):
 
 
 class AddPostView(CreateView):
+    """ add new post template """
     model = Post
     form_class = PostForm
     template_name = 'add_post.html'
@@ -76,6 +81,7 @@ class AddPostView(CreateView):
 
 
 class AddCommentView(CreateView):
+    """ add comment view template """
     model = Comment
     form_class = CommentForm
     template_name = 'add_comment.html'
@@ -88,6 +94,7 @@ class AddCommentView(CreateView):
 
 
 class AddCategoryView(CreateView):
+    """ add new category view template """
     model = Category
     template_name = 'add_category.html'
     fields = '__all__'
@@ -100,6 +107,7 @@ class AddCategoryView(CreateView):
 
 
 class UpdatePostView(UpdateView):
+    """ add update post view template """
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
@@ -112,6 +120,7 @@ class UpdatePostView(UpdateView):
 
 
 class DeletePostView(DeleteView):
+    """ add delete postview template """
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
