@@ -10,7 +10,7 @@ from blog.models import Profile
 
 
 class CreateProfilePageView(CreateView):
-    """ add profile page view template """
+    """ Render add profile page view template """
     model = Profile
     form_class = ProfilePageForm
     template_name = 'registration/create_user_profile_page.html'
@@ -21,7 +21,7 @@ class CreateProfilePageView(CreateView):
 
 
 class EditProfilePageView(generic.UpdateView):
-    """ edit profile view template """
+    """ Render edit profile view template """
     model = Profile
     template_name = 'registration/edit_profile_page.html'
     fields = ['bio', 'profile_pic', 'facebook_url', 'instagram_url', 'youtube_url', 'twitter_url']
@@ -29,7 +29,7 @@ class EditProfilePageView(generic.UpdateView):
 
 
 class ShowProfilePageView(DetailView):
-    """ profile detail view template """
+    """ Render profile detail view template """
     model = Profile
     template_name = 'registration/user_profile.html'
 
@@ -43,7 +43,7 @@ class ShowProfilePageView(DetailView):
 
 
 class PasswordsChangeView(PasswordChangeView):
-    """ password change view template """
+    """ Render password change view template """
     form_class = PasswordChangingForm
     success_url = reverse_lazy('password_success')
 
@@ -53,14 +53,14 @@ def password_success(request):
 
 
 class UserRegisterView(generic.CreateView):
-    """ registration view template """
+    """ Render registration view template """
     form_class = SignUpForm
     template_name = 'registration/register.html'
     success_url = reverse_lazy('login')
 
 
 class UserEditView(generic.UpdateView):
-    """ edit user details view template """
+    """ Render edit user details view template """
     form_class = EditProfileForm
     template_name = 'registration/edit_profile.html'
     success_url = reverse_lazy('home')

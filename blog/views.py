@@ -20,7 +20,7 @@ def LikeView(request, pk):
 
 
 class HomeView(ListView):
-    """ add home view template """
+    """ Render home view template """
     model = Post
     template_name = 'home.html'
     ordering = ['-post_date']
@@ -46,7 +46,7 @@ def CategoryView(request, cats):
 
 
 class ArticleDetailView(DetailView):
-    """ add article details view template """
+    """ Render article details view template """
     model = Post
     template_name = 'article_detail.html'
 
@@ -68,7 +68,7 @@ class ArticleDetailView(DetailView):
 
 
 class AddPostView(CreateView):
-    """ add new post template """
+    """ Render new post template """
     model = Post
     form_class = PostForm
     template_name = 'add_post.html'
@@ -81,7 +81,7 @@ class AddPostView(CreateView):
 
 
 class AddCommentView(CreateView):
-    """ add comment view template """
+    """ Render comment view template """
     model = Comment
     form_class = CommentForm
     template_name = 'add_comment.html'
@@ -94,7 +94,7 @@ class AddCommentView(CreateView):
 
 
 class AddCategoryView(CreateView):
-    """ add new category view template """
+    """ Render new category view template """
     model = Category
     template_name = 'add_category.html'
     fields = '__all__'
@@ -107,7 +107,7 @@ class AddCategoryView(CreateView):
 
 
 class UpdatePostView(UpdateView):
-    """ add update post view template """
+    """ Render update post view template """
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
@@ -120,7 +120,7 @@ class UpdatePostView(UpdateView):
 
 
 class DeletePostView(DeleteView):
-    """ add delete postview template """
+    """ Render delete postview template """
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')

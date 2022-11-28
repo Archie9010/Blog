@@ -1,6 +1,6 @@
 # Beautiful Castles 
 
-Welcome to [Blog ](https://blog-archie.herokuapp.com) A place where we can share our experiences and learn from one another. Encourages freedom of speech and open discussion to spark new ideas. Helps build friendships with people from all around the world, and make new ones along the way. Blog about anything that interests you, whether it's travel, food or hobbies it's up to you!
+Welcome to [BlogSeed ](https://blog-archie.herokuapp.com) A place where we can share our experiences and learn from one another. Encourages freedom of speech and open discussion to spark new ideas. Helps build friendships with people from all around the world, and make new ones along the way. Blog about anything that interests you, whether it's travel, food or hobbies it's up to you!
 Our blog is a place for people of all walks of life to come together and share their stories. Share your thoughts with complete freedom, without fear. It's a safe space for everyone. Building friendships and traveling the world is just one of the amazing things we do. We are all about nourishing our minds and bodies, so you can find posts about food, hobbies or even mindfulness for your mental health!
 
 ![mockup](blog/images/mockup.png)
@@ -16,8 +16,9 @@ Our blog is a place for people of all walks of life to come together and share t
 ## Technologies Used
 
  * [HTML5](https://en.wikipedia.org/wiki/HTML5)
+ * [CSS](https://en.wikipedia.org/wiki/CSS)
  * [Bootsrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
- * [Djangp](https://en.wikipedia.org/wiki/Django_(web_framework))
+ * [Django/allauth](https://en.wikipedia.org/wiki/Django_(web_framework))
  * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
  * [Cloudinary](https://en.wikipedia.org/wiki/Cloudinary)
  * [Heroku](https://en.wikipedia.org/wiki/Heroku)
@@ -27,7 +28,8 @@ Our blog is a place for people of all walks of life to come together and share t
  * [Pep8](https://pypi.org/project/pep8/)
  * [W3school](https://en.wikipedia.org/wiki/W3Schools)
  * [Git](https://en.wikipedia.org/wiki/Git) 
- * [Github](https://en.wikipedia.org/wiki/GitHub) 
+ * [Github](https://en.wikipedia.org/wiki/GitHub)
+ * [Gitpod](https://www.gitpod.io/docs/introduction) 
 
  ## Wireframe
 The wireframe model is created as part of the project planning. Its task is to graphically present the appearance of the application on three different devices: computer - high resolution, tablet - medium resolution, mobile - low resolution. The application will be built on the basis of the created sketch.
@@ -133,10 +135,10 @@ The wireframe model is created as part of the project planning. Its task is to g
 
 ### Browser Compatibilit
 
-* Chrome (97) - Pass
-* firefox (96) - Pass 
-* Safari (15.2)- Pass 
-* Edge (97) - Pass 
+* Chrome  - Pass
+* firefox - Pass 
+* Safari - Pass 
+* Edge  - Pass 
 
 ### Bugs
 
@@ -158,6 +160,23 @@ The wireframe model is created as part of the project planning. Its task is to g
 
 
 ## Deployment
+
+
+### Publishing 
+
+The project was deployed using Heroku. The process is as follows:
+
+Once you have signed up to Heroku, on the top right of the dashboard there is a button labelled 'New'. This will open a dropdown; please select 'Create new app'. On the next page you can choose your region and a name for the project. Then click 'Create app'.
+
+On the next page there is a menu along the top. Navigate to 'Settings', where you will find the config vars. Scroll down to the section named 'Config vars' and click on the button labelled 'Reveal config vars'. Cloudinary (AWS?) and Postgres will both need config vars as per your own details. You will also need to set a secret key. Once the config vars are saved, back in Gitpod save them in an env.py file. Make sure to add env.py to your .gitignore list so that your config vars do not become publically available on Github.
+
+If you scroll back to the top of the page you will find the 'Deploy' tab, which has multiple options for deployment. I used Github for this project. When you click on the Github button a bar will come up for you to search for the repo you wish to connect to.
+
+Once you have connected, you have the option to deploy automatically (the app will update every time you push) or manually (update only when you choose). I chose automatic but you can do what suits you.
+
+After the first push/update, your app will be ready to go!
+
+
 
 ### How to clone the repository
 
@@ -182,7 +201,7 @@ The site was deployed to Heroku. The steps to deploy are followed:
 * Navigate to the deploy tab
 * Scroll down to Manual Deploy and select deploy branch.
 
-Live link: [My Blog](https://blog-archie.herokuapp.com/)
+Live link: [BlogSeed](https://blog-archie.herokuapp.com/)
 
 
 ## Credits
