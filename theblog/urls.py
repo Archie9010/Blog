@@ -26,3 +26,6 @@ urlpatterns = [
 
 
 handler404 = 'theblog.views.error_404_view'
+handler500 = 'theblog.views.error_500_view'
+handler403 = 'theblog.views.error_403_view'
+handler405 = 'theblog.views.error_405_view'
