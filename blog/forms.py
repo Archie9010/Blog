@@ -10,6 +10,7 @@ for item in choices:
 
 
 class PostForm(forms.ModelForm):
+    """Model form for users to add new post"""
     class Meta:
         model = Post
         fields = ('title', 'author', 'category', 'body', 'header_image')
@@ -23,6 +24,7 @@ class PostForm(forms.ModelForm):
 
 
 class EditForm(forms.ModelForm):
+    """Model form for users to edit post"""
     class Meta:
         model = Post
         fields = ('title', 'body')
@@ -34,6 +36,7 @@ class EditForm(forms.ModelForm):
 
 
 class CommentForm(forms.ModelForm):
+    """Model form for users to add new comment"""
     class Meta:
         model = Comment
         fields = ('name', 'body')

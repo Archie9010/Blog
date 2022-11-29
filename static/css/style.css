@@ -23,16 +23,10 @@ html>body {
   
 /* Navbar */
 
-.nav-logo {
-  color: green;
-}
-
 .nav-font {
     font-family: 'Roboto', cursive;
     font-weight: 800;
   }
-
-/* User Profile Box */
 
 /* Landing Page Image Container  */
 .image-container {
@@ -115,7 +109,7 @@ html>body {
 
   /* Small devices (landscape phones, 576px and up) */
   @media  (min-width: 576px) {
-    .img { height:100%; width:80%;}
+    .img { height:100%; width:60%;}
     .login-form {width: 90%;}
   }
   

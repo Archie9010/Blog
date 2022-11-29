@@ -23,3 +23,6 @@ urlpatterns = [
     path('members/', include('members.urls')),
     path('accounts/', include('allauth.urls')),
 ]
+
+
+handler404 = 'theblog.views.error_404_view'

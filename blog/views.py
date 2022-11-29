@@ -6,6 +6,7 @@ from django.urls import reverse_lazy, reverse
 from django.http import HttpResponseRedirect
 
 
+
 def LikeView(request, pk):
     """ add like function """
     post = get_object_or_404(Post, id=request.POST.get('post_id'))

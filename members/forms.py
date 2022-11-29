@@ -5,6 +5,7 @@ from blog.models import Profile
 
 
 class ProfilePageForm(forms.ModelForm):
+    """Model form for users to edit user's profile details"""
     class Meta:
         model = Profile
         fields = ('profile_pic', 'facebook_url', 'instagram_url', 'youtube_url', 'twitter_url', 'bio')
@@ -19,6 +20,7 @@ class ProfilePageForm(forms.ModelForm):
 
 
 class SignUpForm(UserCreationForm):
+    """Creation user form for users to sign up"""
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Email Address'}))
     first_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'First Name'}))
     last_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Last Name'}))
@@ -36,6 +38,7 @@ class SignUpForm(UserCreationForm):
 
 
 class EditProfileForm(UserChangeForm):
+    """User change form for users to edit user's personal details"""
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Email Address'}))
     first_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'First Name'}))
     last_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Last Name'}))
