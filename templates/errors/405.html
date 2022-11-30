@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}405{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1 class="display-4">Error 405: That's an Error</h1>
+    <p class="lead">The request Method is inappropriate for the URL</p>
+    <hr class="my-4">
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="{% url 'home' %}" role="button">Go To Home Page</a>
+    </p>
+</div>
+ 
+{% endblock %}
