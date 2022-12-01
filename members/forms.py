@@ -50,6 +50,7 @@ class EditProfileForm(UserChangeForm):
 
     
 class PasswordChangingForm(PasswordChangeForm):
+    """Password change form for users to change user's password"""
     old_password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Old Password', 'type':'password'}))
     new_password1 = forms.CharField(max_length=100, widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'New Paasword', 'type':'password'}))
     new_password2 = forms.CharField(max_length=100, widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Re-Enter New Password', 'type':'password'}))
